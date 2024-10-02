@@ -7,7 +7,7 @@ Use this repository's CA root certificate on your computer to make our localhost
 To install it on macOS :
 
 ```bash
-mk ~/certs -p
+mkdir ~/certs -p
 cd ~/certs
 curl -o ./webid-localhost-CA.pem https://raw.githubusercontent.com/web-id-fr/web-id-localhost-ca/refs/heads/main/certs/webid-localhost-CA.pem
 sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" webid-localhost-CA.pem
